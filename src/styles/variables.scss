@@ -1,6 +1,3 @@
-
-
-
 $screens: (
   xs: 320px,
   ss: 375px,
@@ -18,7 +15,7 @@ $screens: (
 // $area-half: 8px;
 $area-base-small: 12px;
 // $area-base: 16px;
-// $area-base-large: 24px;
+$area-base-large: 24px;
 $area-double: 32px;
 $area-treble: 48px;
 // $area-quatro: 64px;
@@ -26,19 +23,13 @@ $area-treble: 48px;
 // $area-largest: 120px;
 
 // /* colors */
-// $color-primary-red-darker: hsl(12, 60%, 45%);
-// $color-primary-red: hsl(12, 88%, 59%);
-// $color-primary-red-light: hsl(12, 88%, 75%);
-// $color-primary-blue: hsl(228, 39%, 23%);
-// $color-grayish-blue: hsl(227, 12%, 61%);
-// $color-dark-blue: hsl(232, 12%, 13%);
-// $color-pale-red: hsl(13, 100%, 96%);
-// $color-light-gray: hsl(0, 0%, 97%);
-$colo-white: #FFFFFF;
+$colo-white: #ffffff;
+$colo-black: #0b0d17;
+$colo-blue: #d0d6f9;
 
 // /* border */
 // $radius-base: 4px;
-
+$radius-circle: 50%;
 // /* typography */
 // 20px × 23 + 2
 // 24px × 1 + 23
@@ -56,29 +47,52 @@ $lh-base: 28px;
 $fs-base-big: 18px;
 $lh-base-big: 32px;
 
-$fs-a:14px;
+$fs-a: 14px;
 $ls-a: 17px;
-
-$fs-h1: 150px;
-$lh-h1: 172px;
-
-$fs-h2: 100px;
-$lh-h2: 115px;
 
 $fs-h3: 80px;
 $lh-h3: 92px;
 
-$fs-h4: 56px;
-$lh-h4: 64px;
-
 $fs-h5: 40px;
 $lh-h5: 46px;
+// ---------- --------- ---- - ------
 
-$fs-h6: 32px;
-$lh-h6: 37px;
+$fs-heading-1: 150px;
+$ff-heading-1: 'Bellefair';
+$lh-heading-1: 172px;
+$lh-heading-1-small: 150px;
 
-$fs-X: 28px;
-$lh-X: 34px;
+$fs-heading-2: 100px;
+$lh-heading-2: 115px;
+
+$fs-heading-3: 56px;
+$lh-heading-3: 92px;
+
+$fs-heading-4: 32px;
+$lh-heading-4: 37px;
+
+$fs-heading-5: 28px;
+$ff-heading-5: 'Barlow Condensed Regular';
+$lh-heading-5: 34px;
+$ls-heading-5: 4.725px;
+
+$fs-heading-5-small: 20px;
+$lh-heading-5-small: 24px;
+$ls-heading-5-small: 3.375px;
+// ---- ----
+$fs-subheading-1: 28px;
+$ff-subheading-1: 'Barlow Condensed Regular';
+
+$fs-subheading-2: 14px;
+$ls-subheading-2: 2.35px;
+
+$fs-nav: 16px;
+$ls-heading-5: 2.75px;
+
+$fs-base: 18px;
+$lh-base: 32px;
+
+// font-family: 'Barlow';
 
 // $f-base: 'Be Vietnam Pro';
 // $ff-primary: $f-base, 'sans-serif';

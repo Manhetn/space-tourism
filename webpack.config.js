@@ -7,6 +7,7 @@ const FileManagerPlugin = require('filemanager-webpack-plugin');
 module.exports = {
   entry: {
     main: './src/pages/main/index.js',
+    destination: './src/pages/destination/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -84,6 +85,12 @@ module.exports = {
       filename: 'index.html',
       template: 'src/pages/main/index.html',
       chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      filename: 'destination.html',
+      template: 'src/pages/destination/index.html',
+      chunks: ['destination'],
     }),
     new MiniCssExtractPlugin({
       filename: '[name]/[name].[contenthash].css',

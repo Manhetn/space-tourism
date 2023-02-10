@@ -2,19 +2,38 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: auto 1fr auto;
-  background-image: url(../../assets/images/home/background-home-desktop.jpg);
+  grid-template-rows: auto 1fr;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 
+  &--main {
+    background-image: url(../../assets/images/home/background-home-desktop.jpg);
+  }
+
+  &--destination {
+    background-image: url(../../assets/images/destination/background-destination-desktop.jpg);
+  }
+
   @media (max-width: map-get($screens, md)) {
-    background-image: url(../../assets/images/home/background-home-tablet.jpg);
+    &--main {
+      background-image: url(../../assets/images/home/background-home-tablet.jpg);
+    }
+
+    &--destination {
+    background-image: url(../../assets/images/destination/background-destination-tablet.jpg);
+  }
   }
 
   @media (max-width: map-get($screens, ss)) {
-    background-image: url(../../assets/images/home/background-home-mobile.jpg);
+    &--main {
+      background-image: url(../../assets/images/home/background-home-mobile.jpg);
+    }
+
+    &--destination {
+    background-image: url(../../assets/images/destination/background-destination-mobile.jpg);
+  }
   }
 
   &--not-scroll {

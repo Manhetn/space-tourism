@@ -1,0 +1,43 @@
+.main-button {
+  background-color: $colo-white;
+  border-radius: $radius-circle;
+  width: 274px;
+  height: 274px;
+  border: none;
+  color: $colo-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: $fs-heading-4;
+  line-height: $lh-heading-4;
+  font-family: 'Bellefair';
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 0px 88px rgba(225, 225, 225, 0.1);
+  }
+
+  @media (max-width: map-get($screens,  md)) {
+    width: 242px;
+    height: 242px;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 78px rgba(225, 225, 225, 0.1);
+    }
+  }
+
+  @media (max-width: map-get($screens,  sm)) {
+    width: 150px;
+    height: 150px;
+
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 48.5px rgba(225, 225, 225, 0.1);
+    }
+  }
+}
