@@ -1,28 +1,29 @@
-// $screens: (
-//   xs: 0,
-//   ss: 320px,
-//   sm: 480px,
-//   md: 768px,
-//   lg: 1024px,
-//   xl: 1260px,
-//   xxl: 1440px,
-// );
+
+
+
+$screens: (
+  xs: 320px,
+  ss: 375px,
+  sm: 480px,
+  mds: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1260px,
+  xxl: 1440px,
+);
 
 // $max-width: 1110px;
 
 // $area-bullet: 4px;
 // $area-half: 8px;
-// $area-base-small: 12px;
+$area-base-small: 12px;
 // $area-base: 16px;
 // $area-base-large: 24px;
-// $area-double: 32px;
-// $area-treble: 48px;
+$area-double: 32px;
+$area-treble: 48px;
 // $area-quatro: 64px;
 // $area-large: 80px;
 // $area-largest: 120px;
-
-// // - Mobile: 375px
-// // - Desktop: 1440px
 
 // /* colors */
 // $color-primary-red-darker: hsl(12, 60%, 45%);
@@ -33,23 +34,54 @@
 // $color-dark-blue: hsl(232, 12%, 13%);
 // $color-pale-red: hsl(13, 100%, 96%);
 // $color-light-gray: hsl(0, 0%, 97%);
-// $colo-white: hsl(0 0% 100%);
+$colo-white: #FFFFFF;
 
 // /* border */
 // $radius-base: 4px;
 
 // /* typography */
-// $fs-base-least: 13px;
-// $fs-base-small: 14px;
-// $fs-base: 15px;
-// $fs-base-large: 16px;
-// $fs-h3: 30px;
-// $fs-h2: 40px;
-// $fs-h1: 56px;
+// 20px × 23 + 2
+// 24px × 1 + 23
+
+$fs-base-small: 15px;
+$lh-base-small: 25px;
+
+// line-height: 19px;
+
+$fs-least: 14px;
+
+$fs-base: 16px;
+$lh-base: 28px;
+
+$fs-base-big: 18px;
+$lh-base-big: 32px;
+
+$fs-a:14px;
+$ls-a: 17px;
+
+$fs-h1: 150px;
+$lh-h1: 172px;
+
+$fs-h2: 100px;
+$lh-h2: 115px;
+
+$fs-h3: 80px;
+$lh-h3: 92px;
+
+$fs-h4: 56px;
+$lh-h4: 64px;
+
+$fs-h5: 40px;
+$lh-h5: 46px;
+
+$fs-h6: 32px;
+$lh-h6: 37px;
+
+$fs-X: 28px;
+$lh-X: 34px;
 
 // $f-base: 'Be Vietnam Pro';
 // $ff-primary: $f-base, 'sans-serif';
 
-// $fw-regular: 400;
-// $fw-medium: 500;
-// $fw-bold: 700;
+$fw-regular: 400;
+$fw-bold: 700;

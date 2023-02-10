@@ -1,0 +1,23 @@
+.root {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url(../../assets/images/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  @media (max-width: map-get($screens, md)) {
+    background-image: url(../../assets/images/home/background-home-tablet.jpg);
+  }
+
+  @media (max-width: map-get($screens, ss)) {
+    background-image: url(../../assets/images/home/background-home-mobile.jpg);
+  }
+
+  &--not-scroll {
+    overflow: hidden;
+  }
+}

@@ -1,2 +1,54 @@
 .header {
+  margin-top: 40px;
+  font-family: 'Barlow Condensed';
+  line-height: $lh-base-small - 6;
+  letter-spacing: 2.7px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 55px;
+  }
+
+  &__logo-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__navigation {
+  }
+
+  @media (max-width: map-get($screens, xl)) {
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-least;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    margin-top: 0;
+
+    &__content {
+      padding-left: 39px;
+    }
+  }
+
+  @media (max-width: map-get($screens, mds)) {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+
+    &__content {
+      padding-left: 24px;
+    }
+
+    &__logo-link {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+  }
 }
