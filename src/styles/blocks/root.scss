@@ -26,7 +26,7 @@
   }
   }
 
-  @media (max-width: map-get($screens, ss)) {
+  @media (max-width: map-get($screens, sm)) {
     &--main {
       background-image: url(../../assets/images/home/background-home-mobile.jpg);
     }

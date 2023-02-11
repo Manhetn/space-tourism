@@ -28,8 +28,10 @@
               <li class="navigation__list-item">
                 <a href="index.html" class="navigation__link">HOME</a>
               </li>
-              <li class="navigation__list-item navigation__list-item--active">
-                <a href="#" class="navigation__link">DESTINATION</a>
+              <li class="navigation__list-item">
+                <a href="#" class="navigation__link navigation__link--active"
+                  >DESTINATION</a
+                >
               </li>
               <li class="navigation__list-item">
                 <a href="" class="navigation__link">CREW</a>
@@ -114,13 +116,31 @@
                 </li>
               </ul>
               <ul class="tabs__list-content">
-                <li class="tabs__content-item tabs__content-item--active" id="moon">
+                <li
+                  class="tabs__content-item tabs__content-item--active"
+                  id="moon"
+                >
                   <article class="destination-article destination__article">
-                    <img
-                      src="<%=require('../../assets/images/destination/image-moon.webp')%>"
-                      alt="moon"
-                      class="destination-article__img"
-                    />
+                    <picture class="destination__article__picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          <%=require('../../assets/images/destination/image-moon.webp')%>
+                        "
+                      />
+                      <source
+                      type="image/png"
+                        srcset="
+                          <%=require('../../assets/images/destination/image-moon.png')%>
+                        "
+                      />
+                      <img
+                        src="<%=require('../../assets/images/destination/image-moon.png')%>"
+                        alt="moon"
+                        class="destination-article__img"
+                      />
+                    </picture>
+
                     <div class="destination-article__description">
                       <h2 class="destination-article__title">MOON</h2>
                       <p class="destination-article__text">

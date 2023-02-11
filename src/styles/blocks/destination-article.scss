@@ -2,17 +2,28 @@
   display: flex;
   justify-content: center;
   gap: 157px;
+  // max-width: 1048px;
+  // align-items: center;
+  // margin: 0 auto;
+
+  &_article__picture {
+    max-width: 445px;
+    min-width: 300px;
+    width: 100%;
+  }
 
   &__img {
-    max-width: 445px;
-    max-height: 445px;
+    width: 100%
+    // max-width: 445px;
+    // max-height: 445px;
+    // width: fit-content;
   }
+
   &__description {
     max-width: 445px;
-    // display: flex;
-    // flex-direction: column;
     padding-top: 37px;
   }
+
   &__title {
     margin-bottom: 14px;
     color: $colo-white;
@@ -22,11 +33,6 @@
   }
 
   &__text {
-    // font-family: 'Barlow';
-    // font-style: normal;
-    // font-weight: 400;
-    // font-size: 18px;
-    // line-height: 32px;
     margin-bottom: 54px;
   }
 
@@ -40,6 +46,7 @@
   &__info {
     text-transform: uppercase;
   }
+
   &__info-title {
     font-family: 'Barlow Condensed';
     font-size: 14px;
@@ -54,5 +61,78 @@
     font-size: 28px;
     line-height: 32px;
     color: $colo-white;
+  }
+
+  @media (max-width: map-get($screens, lg)) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 119px;
+
+    &__description {
+      padding-top: 0;
+      text-align: center;
+    }
+
+    &__addition {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    &__img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+    &__description {
+      text-align: center;
+      max-width: 573px;
+      padding-top: 0;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 80px;
+      line-height: 92px;
+    }
+
+    &__text {
+      margin-bottom: 49px;
+    }
+
+    &__addition {
+      gap: 86px;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    gap: 74px;
+
+    &__img {
+      max-width: 170px;
+      max-height: 170px;
+    }
+
+    &__description {
+      text-align: center;
+      max-width: 573px;
+    }
+
+    &__title {
+      font-size: 56px;
+      line-height: 64px;
+      margin-bottom: 1px;
+    }
+
+    &__text {
+      margin-bottom: 32px;
+    }
+
+    &__addition {
+      flex-direction: column;
+      gap: 32px;
+      padding-top: 32px;
+    }
   }
 }

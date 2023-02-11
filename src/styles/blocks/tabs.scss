@@ -1,13 +1,16 @@
 .tabs {
-  &__tabs {
-  }
+  display: flex;
+  flex-direction: column;
+
   &__list {
+    align-self: flex-end;
+    max-width: 476.5px;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: stretch;
     gap: 36px;
-    margin-right: 184px;
   }
+
   &__list-item {
   }
 
@@ -45,6 +48,47 @@
 
     &--active {
       display: block;
+    }
+  }
+
+  @media (max-width: map-get($screens, xl)) {
+    &__list {
+      // max-width: 445px;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: map-get($screens, lg)) {
+    position: relative;
+
+    &__list {
+      align-self: center;
+      margin: 0;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      top: 487.5px;
+      z-index: 1;
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    &__list {
+      width: 100%;
+      top: 353px;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    &__list {
+      top: 196px;
+      gap: 26px;
+    }
+
+    &__list-tab {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 2.3625px;
     }
   }
 }

@@ -13,8 +13,22 @@
 
   &__list-item {
     counter-increment: count;
-    padding: $area-double + 7 0 $area-double + 3;
+    padding: $area-double + 7 0 0;
+  }
+
+  &__link {
+    display: flex;
+    gap: $area-base-small;
+    text-decoration: none;
+    color: $colo-white;
     border-bottom: 3px solid transparent;
+    padding-bottom: $area-double + 3;
+
+    &::before {
+      content: '0' counter(count);
+      display: block;
+      font-weight: $fw-bold;
+    }
 
     &--active,
     &--active:hover {
@@ -24,19 +38,6 @@
 
     &:hover {
       border-bottom-color: rgba($color: $colo-white, $alpha: 0.5);
-    }
-  }
-
-  &__link {
-    display: flex;
-    gap: $area-base-small;
-    text-decoration: none;
-    color: $colo-white;
-
-    &::before {
-      content: '0' counter(count);
-      display: block;
-      font-weight: $fw-bold;
     }
   }
 
@@ -92,6 +93,7 @@
       .navigation__list {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         padding: 118px 32px;
         gap: 32px;
         width: 254px;

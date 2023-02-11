@@ -7,19 +7,39 @@
   &__content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-left: 55px;
+
+    &::before {
+      display: block;
+      content: '';
+      border: 1px solid rgba($color: $colo-white, $alpha: 0.25);
+      width: 100%;
+      margin-left: 37px;
+      order: 1;
+      position: relative;
+      z-index: 2;
+      right: -30px;
+    }
   }
 
   &__logo-link {
-    width: 48px;
+    min-width: 48px;
     height: 48px;
+    margin-right: auto;
   }
 
   &__navigation {
+    order: 2;
   }
 
   @media (max-width: map-get($screens, xl)) {
+    &__content {
+      justify-content: space-between;
+
+      &::before {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: map-get($screens, md)) {
@@ -44,8 +64,9 @@
     }
 
     &__logo-link {
-      width: 40px !important;
-      height: 40px !important;
+      min-width: none;
+      width: 40px;
+      height: 40px;
     }
   }
 
