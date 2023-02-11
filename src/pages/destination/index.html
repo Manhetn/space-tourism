@@ -65,8 +65,222 @@
         </div>
       </header>
       <main class="main">
-        
+        <section class="destination">
+          <div class="container destination__container">
+            <h1 class="destination__title">
+              <b class="destination__count">01</b>Pick your destination
+            </h1>
+            <div class="tabs destination__tabs">
+              <ul class="tabs__list">
+                <li class="tabs__list-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="tabs__list-tab"
+                    role="button"
+                    aria-pressed="true"
+                    data-for-tab-id="moon"
+                    >MOON</a
+                  >
+                </li>
+                <li class="tabs__list-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="tabs__list-tab"
+                    role="button"
+                    aria-pressed="false"
+                    data-for-tab-id="mars"
+                    >MARS</a
+                  >
+                </li>
+                <li class="tabs__list-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="tabs__list-tab"
+                    role="button"
+                    aria-pressed="false"
+                    data-for-tab-id="europa"
+                    >EUROPA</a
+                  >
+                </li>
+                <li class="tabs__list-item">
+                  <a
+                    href="javascript:void(0);"
+                    class="tabs__list-tab"
+                    role="button"
+                    aria-pressed="false"
+                    data-for-tab-id="titan"
+                    >TITAN</a
+                  >
+                </li>
+              </ul>
+              <ul class="tabs__list-content">
+                <li class="tabs__content-item tabs__content-item--active" id="moon">
+                  <article class="destination-article destination__article">
+                    <img
+                      src="<%=require('../../assets/images/destination/image-moon.webp')%>"
+                      alt="moon"
+                      class="destination-article__img"
+                    />
+                    <div class="destination-article__description">
+                      <h2 class="destination-article__title">MOON</h2>
+                      <p class="destination-article__text">
+                        See our planet as you’ve never seen it before. A perfect
+                        relaxing trip away to help regain perspective and come
+                        back refreshed. While you’re there, take in some history
+                        by visiting the Luna 2 and Apollo 11 landing sites.
+                      </p>
+                      <div class="destination-article__addition">
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            AVG. DISTANCE
+                          </h3>
+                          <p class="destination-article__info-text">
+                            384,400 km
+                          </p>
+                        </div>
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            Est. travel time
+                          </h3>
+                          <p class="destination-article__info-text">3 days</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="tabs__content-item" id="mars">
+                  <article class="destination-article destination__article">
+                    <img
+                      src="<%=require('../../assets/images/destination/image-mars.png')%>"
+                      alt="moon"
+                      class="destination-article__img"
+                    />
+                    <div class="destination-article__description">
+                      <h2 class="destination-article__title">MARS</h2>
+                      <p class="destination-article__text">
+                        Don’t forget to pack your hiking boots. You’ll need them
+                        to tackle Olympus Mons, the tallest planetary mountain
+                        in our solar system. It’s two and a half times the size
+                        of Everest!
+                      </p>
+                      <div class="destination-article__addition">
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            AVG. DISTANCE
+                          </h3>
+                          <p class="destination-article__info-text">
+                            225 MIL. km
+                          </p>
+                        </div>
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            Est. travel time
+                          </h3>
+                          <p class="destination-article__info-text">9 months</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="tabs__content-item" id="europa">
+                  <article
+                    class="destination-article destination__article"
+                    id="moon"
+                  >
+                    <img
+                      src="<%=require('../../assets/images/destination/image-europa.png')%>"
+                      alt="moon"
+                      class="destination-article__img"
+                    />
+                    <div class="destination-article__description">
+                      <h2 class="destination-article__title">EUROPA</h2>
+                      <p class="destination-article__text">
+                        The smallest of the four Galilean moons orbiting
+                        Jupiter, Europa is a winter lover’s dream. With an icy
+                        surface, it’s perfect for a bit of ice skating, curling,
+                        hockey, or simple relaxation in your snug wintery cabin.
+                      </p>
+                      <div class="destination-article__addition">
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            AVG. DISTANCE
+                          </h3>
+                          <p class="destination-article__info-text">
+                            628 MIL. km
+                          </p>
+                        </div>
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            Est. travel time
+                          </h3>
+                          <p class="destination-article__info-text">3 years</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li class="tabs__content-item" id="titan">
+                  <article
+                    class="destination-article destination__article"
+                    id="moon"
+                  >
+                    <img
+                      src="<%=require('../../assets/images/destination/image-titan.png')%>"
+                      alt="moon"
+                      class="destination-article__img"
+                    />
+                    <div class="destination-article__description">
+                      <h2 class="destination-article__title">TITAN</h2>
+                      <p class="destination-article__text">
+                        The only moon known to have a dense atmosphere other
+                        than Earth, Titan is a home away from home (just a few
+                        hundred degrees colder!). As a bonus, you get striking
+                        views of the Rings of Saturn.
+                      </p>
+                      <div class="destination-article__addition">
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            AVG. DISTANCE
+                          </h3>
+                          <p class="destination-article__info-text">
+                            1.6 BIL. km
+                          </p>
+                        </div>
+                        <div class="destination-article__info">
+                          <h3 class="destination-article__info-title">
+                            Est. travel time
+                          </h3>
+                          <p class="destination-article__info-text">7 years</p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>
 </html>
+
+<!-- <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        <%=require('../../assets/images/destination/image-moon.webp')%>
+                      "
+                    />
+                    <source
+                      type="image/png"
+                      srcset="
+                        <%=require('../../assets/images/destination/image-europa.png')%>
+                      "
+                    />
+                    <img
+                      src="<%=require('../../assets/images/destination/image-moon.png')%>"
+                      alt="moon"
+                      class="destination-article__img"
+                    />
+                  </picture> -->

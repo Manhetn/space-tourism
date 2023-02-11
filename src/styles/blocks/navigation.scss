@@ -3,21 +3,27 @@
   align-items: center;
 
   &__list {
-    counter-reset: list -1;
+    counter-reset: count -1;
     display: flex;
     gap: $area-treble;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba($color: $colo-white, $alpha: 0.04);
     backdrop-filter: blur(40.7742px);
     padding: 0 165px 0 123px;
   }
 
   &__list-item {
-    counter-increment: list;
+    counter-increment: count;
     padding: $area-double + 7 0 $area-double + 3;
     border-bottom: 3px solid transparent;
 
-    &--active {
+    &--active,
+    &--active:hover {
       border-bottom-color: $colo-white;
+      pointer-events: none;
+    }
+
+    &:hover {
+      border-bottom-color: rgba($color: $colo-white, $alpha: 0.5);
     }
   }
 
@@ -28,7 +34,7 @@
     color: $colo-white;
 
     &::before {
-      content: '0' counter(list);
+      content: '0' counter(count);
       display: block;
       font-weight: $fw-bold;
     }
@@ -122,6 +128,8 @@
     }
 
     &__link {
+      text-transform: uppercase;
+
       &::before {
         display: block;
       }

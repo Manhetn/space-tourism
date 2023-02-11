@@ -36,7 +36,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif|webp)$/i,
         type: 'asset/resource',
         use: [
           {
@@ -92,6 +92,7 @@ module.exports = {
       template: 'src/pages/destination/index.html',
       chunks: ['destination'],
     }),
+
     new MiniCssExtractPlugin({
       filename: '[name]/[name].[contenthash].css',
     }),

@@ -1,16 +1,13 @@
 export default class Header {
   constructor(elem) {
-    this.header = elem;
-    this.navigation = this.header.querySelector(
-      '.navigation'
-    );
-    this.toggleNavigationButton = this.header.querySelector(
+    this.elem = elem;
+    this.navigation = this.elem.querySelector('.navigation');
+    this.toggleNavigationButton = this.elem.querySelector(
       '.navigation__toggle-button'
     );
   }
 
   init() {
-    console.log(this.navigation);
     this.addListeners();
   }
 
