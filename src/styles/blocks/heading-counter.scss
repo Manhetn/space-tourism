@@ -1,19 +1,25 @@
 .heading-counter {
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
-    text-transform: uppercase;
-    font-family: 'Barlow Condensed';
-    font-weight: 400;
-    color: $colo-white;
-    margin-bottom: 64px;
+  text-transform: uppercase;
+  color: $colo-white;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  font-family: 'Barlow Condensed';
+  letter-spacing: 4.725px;
 
   &__count {
     margin-right: 28px;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 4.725px;
     color: rgba($color: $colo-white, $alpha: 0.25);
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+
+    &__count {
+      margin-right: 16px;
+    }
   }
 }

@@ -14,6 +14,7 @@
         margin: 0 12px;
 
         background-color: $colo-white;
+        // opacity: 0.17;
         &:first-child {
           margin-left: 0;
         }
@@ -26,8 +27,29 @@
           opacity: 0.5;
         }
 
-        &-active {
-          // background-color: $colo-white;
+        // &-active {
+        //   background-color: $colo-white;
+        // }
+      }
+      // /swiper-pagination-bullet .swiper-pagination-bullet-active
+      // .swiper-pagination-bullet .swiper-pagination-bullet-active {
+      //   background-color: $colo-white;
+      //   opacity: 1;
+      // }
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    &--crew {
+      .swiper-pagination {
+        width: 100%;
+        height: fit-content;
+        top: 31.5%;
+
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          margin: 0 8px;
         }
       }
     }
