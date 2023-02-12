@@ -1,0 +1,19 @@
+.heading-counter {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    color: $colo-white;
+    margin-bottom: 64px;
+
+  &__count {
+    margin-right: 28px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    color: rgba($color: $colo-white, $alpha: 0.25);
+  }
+}

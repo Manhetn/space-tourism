@@ -8,6 +8,10 @@
   background-size: cover;
   position: relative;
 
+  &--not-scroll {
+    overflow: hidden;
+  }
+
   &--main {
     background-image: url(../../assets/images/home/background-home-desktop.jpg);
   }
@@ -16,14 +20,22 @@
     background-image: url(../../assets/images/destination/background-destination-desktop.jpg);
   }
 
+  &--crew {
+    background-image: url(../../assets/images/crew/background-crew-desktop.jpg);
+  }
+
   @media (max-width: map-get($screens, md)) {
     &--main {
       background-image: url(../../assets/images/home/background-home-tablet.jpg);
     }
 
     &--destination {
-    background-image: url(../../assets/images/destination/background-destination-tablet.jpg);
-  }
+      background-image: url(../../assets/images/destination/background-destination-tablet.jpg);
+    }
+
+    &--crew {
+      background-image: url(../../assets/images/crew/background-crew-tablet.jpg);
+    }
   }
 
   @media (max-width: map-get($screens, sm)) {
@@ -32,11 +44,11 @@
     }
 
     &--destination {
-    background-image: url(../../assets/images/destination/background-destination-mobile.jpg);
-  }
-  }
+      background-image: url(../../assets/images/destination/background-destination-mobile.jpg);
+    }
 
-  &--not-scroll {
-    overflow: hidden;
+    &--crew {
+      background-image: url(../../assets/images/crew/background-crew-mobile.jpg);
+    }
   }
 }

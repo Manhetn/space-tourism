@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     main: './src/pages/main/index.js',
     destination: './src/pages/destination/index.js',
+    crew: './src/pages/crew/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -92,7 +93,12 @@ module.exports = {
       template: 'src/pages/destination/index.html',
       chunks: ['destination'],
     }),
-
+    new HtmlWebpackPlugin({
+      inject: 'body',
+      filename: 'crew.html',
+      template: 'src/pages/crew/index.html',
+      chunks: ['crew'],
+    }),
     new MiniCssExtractPlugin({
       filename: '[name]/[name].[contenthash].css',
     }),

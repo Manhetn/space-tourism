@@ -1,15 +1,19 @@
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+
 @import '../../styles/variables.scss';
 @import '../../vendor/reset.scss';
 @import '../../vendor/fonts.scss';
+@import '../../vendor/swiper.scss';
 
 @import '../../styles/blocks/body.scss';
 @import '../../styles/blocks/main.scss';
 @import '../../styles/blocks/root.scss';
 @import '../../styles/blocks/container.scss';
+@import '../../styles/blocks/heading-counter.scss';
 
 @import '../../styles/blocks/navigation.scss';
 @import '../../styles/blocks/main-button.scss';
 @import '../../styles/blocks/header.scss';
-@import '../../styles/blocks/destination.scss';
-@import '../../styles/blocks/tabs.scss';
-@import '../../styles/blocks/destination-article.scss';
+@import '../../styles/blocks/crew.scss';
+@import '../../styles/blocks/crew-article.scss';
