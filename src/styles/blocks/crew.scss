@@ -13,11 +13,17 @@
     z-index: 1;
   }
 
-  &__carousel {
-    // min-height: 700px;
+  @media (max-width: map-get($screens, xl)) {
+    &__container {
+      padding: 0 55px;
+    }
+
+    &__title {
+      left: 55px;
+    }
   }
 
-  @media (max-width: map-get($screens, md)) {
+  @media (max-width: map-get($screens, lg)) {
     margin-top: 40px;
 
     &__container {
@@ -26,59 +32,17 @@
 
     &__title {
       position: static;
-      
-    }
-
-    &__carousel {
-      // max-height: 804px - 60px;
     }
   }
 
-  //   &__title {
-  //     margin-bottom: 0;
-  //   }
+  @media (max-width: map-get($screens, sm)) {
+    &__title {
+      text-align: center;
+      margin-bottom: 32px;
+    }
 
-  //   &__carousel {
-  //     height: 928px;
-  //   }
-  // }
+    &__container {
+      padding: 0 24px;
+    }
+  }
 }
-
-// .crew {
-//   &__container {
-//     padding: 62px 0 0 166.5px;
-//     position: relative;
-//   }
-
-//   &__title {
-//     position: absolute;
-//     top: 76px;
-//     left: 166.5px;
-//     z-index: 1;
-//   }
-
-//   &__carousel {
-//     height: 700px;
-//   }
-
-//   @media (max-width: map-get($screens, md)) {
-//     &__container {
-//       padding: 40px 39px 0;
-//     }
-
-//     &__title {
-//       top: 40px;
-//       left: 39px;
-
-//       font-size: 20px;
-//       line-height: 24px;
-
-//       letter-spacing: 3.375px;
-//       margin-bottom: 0;
-//     }
-
-//     &__carousel {
-//       height: 928px;
-//     }
-//   }
-// }

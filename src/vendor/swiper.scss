@@ -31,26 +31,37 @@
         //   background-color: $colo-white;
         // }
       }
-      // /swiper-pagination-bullet .swiper-pagination-bullet-active
-      // .swiper-pagination-bullet .swiper-pagination-bullet-active {
-      //   background-color: $colo-white;
-      //   opacity: 1;
-      // }
     }
   }
 
-  @media (max-width: map-get($screens, md)) {
+  @media (max-width: map-get($screens, lg)) {
     &--crew {
       .swiper-pagination {
         width: 100%;
         height: fit-content;
-        top: 31.5%;
+        top: 300px;
 
         .swiper-pagination-bullet {
           width: 10px;
           height: 10px;
           margin: 0 8px;
         }
+      }
+    }
+  }
+
+  @media (max-width: map-get($screens, lg)) {
+    &--crew {
+      .swiper-pagination {
+        top: 272px;
+      }
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    &--crew {
+      .swiper-pagination {
+        top: 246px;
       }
     }
   }
