@@ -1,15 +1,14 @@
 .crew-article {
   display: flex;
-  width: 100%;
-  gap: 24px;
+  gap: 80px;
 
-  &__description {
-    padding: 188px 0 109px 0;
+  &__text-content {
+    padding-top: 188px;
+    padding-bottom: 130px;
   }
 
   &__subtitle {
     margin-bottom: 15px;
-    text-transform: uppercase;
     color: rgba($color: $colo-white, $alpha: 0.5);
     font-family: 'Bellefair';
     font-weight: 400;
@@ -18,14 +17,16 @@
   }
 
   &__title {
-    white-space: nowrap;
     margin-bottom: 27px;
-    text-transform: uppercase;
     color: $colo-white;
-
     font-family: 'Bellefair';
     font-size: 56px;
     line-height: 64px;
+  }
+
+  &__subtitle,
+  &__title {
+    text-transform: uppercase;
   }
 
   &__text {
@@ -33,29 +34,22 @@
   }
 
   &__picture {
-    flex: 1 1 auto;
+    height: 702px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    height: 702px;
     border-bottom: 1px solid $colo-blue-dark;
-  }
-
-  @media (max-width: map-get($screens, xl)) {
-    &__description {
-      flex: 1 1 auto;
-      padding: 188px 0 109px 0;
-    }
+    padding-right: 55px;
   }
 
   @media (max-width: map-get($screens, lg)) {
     flex-direction: column;
-    gap: 0;
+    align-items: center;
+    gap: 40px;
 
-    &__description {
-      padding: 60px 0 50px;
+    &__text-content {
       text-align: center;
-      margin-bottom: 40px;
+      padding-top: 0;
+      padding-bottom: 50px;
     }
 
     &__subtitle {
@@ -71,56 +65,142 @@
     }
 
     &__text {
-      max-width: 660px;
-
-      margin: 0 auto;
+      // max-width: 458px;
+      max-width: 592px;
     }
 
     &__picture {
-      align-self: center;
+      max-height: 532px;
+      height: auto;
+      // align-items: flex-end;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: map-get($screens, mds)) {
+    gap: 74px;
+
+    &__text-content {
+      order: 1;
+      padding-bottom: 0;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 28px;
     }
 
     &__picture {
-      height: 532px;
+      height: 222px;
+      width: 100%;
+      justify-content: center;
     }
 
-    @media (max-width: map-get($screens, mds)) {
-      &__subtitle {
-        font-size: 16px;
-        line-height: 18px;
-      }
-
-      &__title {
-        font-size: 24px;
-        line-height: 28px;
-      }
-
-      &__text {
-        max-width: 592px;
-        min-width: auto;
-      }
-    }
-
-    @media (max-width: map-get($screens, sm)) {
-      &__description {
-        order: 1;
-      }
-
-      &__description {
-        padding: 42px 0 0 0;
-        text-align: center;
-        margin-bottom: 0;
-      }
-
-      &__picture {
-        height: 222px;
-        margin-bottom: 32px;
-        align-self: stretch;
-      }
-
-      &__img {
-        height: 100%;
-      }
+    &__img {
+      height: 100%;
     }
   }
 }
+// .crew-article {
+//   display: flex;
+//   width: 100%;
+//   gap: 24px;
+
+//   &__description {
+//     padding: 188px 0 109px 0;
+//   }
+
+//   &__subtitle {
+//     margin-bottom: 15px;
+//
+//
+
+//   }
+
+//   &__title {
+//     white-space: nowrap;
+//
+//     text-transform: uppercase;
+
+//   }
+
+//   &__text {
+//
+//   }
+
+//   @media (max-width: map-get($screens, xl)) {
+//     &__description {
+//       flex: 1 1 auto;
+//       padding: 188px 0 109px 0;
+//     }
+//   }
+
+//   @media (max-width: map-get($screens, lg)) {
+//     flex-direction: column;
+//     gap: 0;
+
+//     &__description {
+//       padding: 60px 0 50px;
+//       text-align: center;
+//       margin-bottom: 40px;
+//     }
+
+//     &__text {
+//       max-width: 660px;
+
+//       margin: 0 auto;
+//     }
+
+//     &__picture {
+//       align-self: center;
+//     }
+
+//     &__picture {
+//       height: 532px;
+//     }
+
+//     @media (max-width: map-get($screens, mds)) {
+//       &__subtitle {
+//         font-size: 16px;
+//         line-height: 18px;
+//       }
+
+//       &__title {
+//         font-size: 24px;
+//         line-height: 28px;
+//       }
+
+//       &__text {
+//         max-width: 592px;
+//         min-width: auto;
+//       }
+//     }
+
+//     @media (max-width: map-get($screens, sm)) {
+//       &__description {
+//         order: 1;
+//       }
+
+//       &__description {
+//         padding: 42px 0 0 0;
+//         text-align: center;
+//         margin-bottom: 0;
+//       }
+
+//       &__picture {
+//         height: 222px;
+//         margin-bottom: 32px;
+//         align-self: stretch;
+//       }
+
+//       &__img {
+//         height: 100%;
+//       }
+//     }
+//   }
+// }

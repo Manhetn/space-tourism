@@ -1,48 +1,84 @@
 .crew {
-  margin-top: 62px;
-
   &__container {
-    padding: 0 55px 0 165px;
+    padding-top: 76px;
+    padding-left: 165.5px;
     position: relative;
   }
 
   &__title {
     position: absolute;
-    top: 0;
+    top: 76px;
     left: 165px;
     z-index: 1;
   }
 
   @media (max-width: map-get($screens, xl)) {
     &__container {
-      padding: 0 55px;
-    }
-
-    &__title {
-      left: 55px;
-    }
-  }
-
-  @media (max-width: map-get($screens, lg)) {
-    margin-top: 40px;
-
-    &__container {
-      padding: 0 39px;
+      padding: 40px 39px 0;
     }
 
     &__title {
       position: static;
+      margin-bottom: 60px;
     }
   }
 
   @media (max-width: map-get($screens, sm)) {
+    &__container {
+       padding: 24px;
+    }
+
     &__title {
       text-align: center;
       margin-bottom: 32px;
     }
-
-    &__container {
-      padding: 0 24px;
-    }
   }
 }
+// .crew {
+//   margin-top: 62px;
+
+//   &__container {
+//     padding: 0 55px 0 165px;
+//     position: relative;
+//   }
+
+//   &__title {
+//     position: absolute;
+//     top: 0;
+//     left: 165px;
+//     z-index: 1;
+//   }
+
+//   @media (max-width: map-get($screens, xl)) {
+//     &__container {
+//       padding: 0 55px;
+//     }
+
+//     &__title {
+//       left: 55px;
+//     }
+//   }
+
+//   @media (max-width: map-get($screens, lg)) {
+//     margin-top: 40px;
+
+//     &__container {
+//       padding: 0 39px;
+//     }
+
+//     &__title {
+//       position: static;
+//     }
+//   }
+
+//   @media (max-width: map-get($screens, sm)) {
+//     &__title {
+//       text-align: center;
+//       margin-bottom: 32px;
+//     }
+
+//     &__container {
+//       padding: 0 24px;
+//     }
+//   }
+// }

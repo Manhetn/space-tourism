@@ -1,42 +1,40 @@
 .swiper {
-  // &--crew {
-  //   width: 100%;
-  //   height: 100%;
-  //   position: relative;
-
-  //   .swiper-pagination {
-  //     width: fit-content;
-  //     bottom: 85.5px;
-
-  //     .swiper-pagination-bullet {
-  //       width: 15px;
-  //       height: 15px;
-  //       margin: 0 12px;
-
-  //       background-color: $colo-white;
-
-  //       &:first-child {
-  //         margin-left: 0;
-  //       }
-
-  //       &:last-child {
-  //         margin-right: 0;
-  //       }
-
-  //       &:hover {
-  //         opacity: 0.5;
-  //       }
-
-  //       // &-active {
-  //       //   background-color: $colo-white;
-  //       // }
-  //     }
-  //   }
-  // }
-
+  &--crew,
   &--technology {
     position: relative;
+  }
 
+  &--crew {
+    .swiper-pagination {
+      display: flex;
+      justify-content: flex-start;
+      position: absolute;
+      top: 579px;
+      left: 0;
+      gap: 24px;
+
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+
+        background: #ffffff;
+        background-color: $colo-white;
+        mix-blend-mode: normal;
+        opacity: 0.17;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &-active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &--technology {
     .swiper-pagination {
       counter-reset: count;
       display: flex;
@@ -84,33 +82,21 @@
   }
 
   @media (max-width: map-get($screens, lg)) {
-    // &--crew {
-    //   .swiper-pagination {
-    //     width: 100%;
-    //     height: fit-content;
-    //     top: 300px;
+    &--crew {
+      .swiper-pagination {
+        justify-content: center;
+        height: fit-content;
+        top: 27.5%;
+        gap: 16px;
 
-    //     .swiper-pagination-bullet {
-    //       width: 10px;
-    //       height: 10px;
-    //       margin: 0 8px;
-    //     }
-    //   }
-    // }
-  }
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
 
-  @media (max-width: map-get($screens, lg)) {
-    // &--crew {
-    //   .swiper-pagination {
-    //     top: 272px;
-    //   }
-    // }
-  }
-
-  @media (max-width: map-get($screens, lg)) {
     &--technology {
-      position: relative;
-
       .swiper-pagination {
         flex-direction: row;
         justify-content: center;
@@ -133,13 +119,15 @@
     }
   }
 
-  @media (max-width: map-get($screens, sm)) {
+  @media (max-width: map-get($screens, mds)) {
     &--crew {
       .swiper-pagination {
         top: 246px;
       }
     }
+  }
 
+  @media (max-width: map-get($screens, sm)) {
     &--technology {
       position: relative;
 
