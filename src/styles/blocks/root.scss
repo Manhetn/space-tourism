@@ -24,6 +24,10 @@
     background-image: url(../../assets/images/crew/background-crew-desktop.jpg);
   }
 
+  &--technology {
+    background-image: url(../../assets/images/technology/background-technology-desktop.jpg);
+  }
+
   @media (max-width: map-get($screens, md)) {
     &--main {
       background-image: url(../../assets/images/home/background-home-tablet.jpg);
@@ -35,6 +39,10 @@
 
     &--crew {
       background-image: url(../../assets/images/crew/background-crew-tablet.jpg);
+    }
+
+    &--technology {
+      background-image: url(../../assets/images/technology/background-technology-tablet.jpg);
     }
   }
 
@@ -49,6 +57,10 @@
 
     &--crew {
       background-image: url(../../assets/images/crew/background-crew-mobile.jpg);
+    }
+
+    &--technology {
+      background-image: url(../../assets/images/technology/background-technology-mobile.jpg);
     }
   }
 }

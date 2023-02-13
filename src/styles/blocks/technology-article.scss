@@ -1,0 +1,115 @@
+.technology-article {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 160px;
+
+  &__text-content {
+    align-self: center;
+    margin-right: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 11px;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+    font-family: 'Bellefair';
+    font-size: 56px;
+    line-height: 64px;
+    color: $colo-white;
+  }
+
+  &__subtitle,
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    max-width: 444px;
+  }
+
+  &__picture {
+    width: 515px;
+  }
+
+  @media (max-width: map-get($screens, xl)) {
+    padding-left: 120px;
+  }
+
+  @media (max-width: map-get($screens, lg)) {
+    flex-direction: column;
+    gap: 160px;
+    padding-left: 0;
+    align-items: center;
+
+    &__text-content {
+      order: 1;
+      text-align: center;
+      max-width: 660px;
+      margin: 0;
+    }
+
+    &__subtitle {
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-size: 40px;
+      line-height: 46px;
+    }
+
+    &__text {
+      max-width: none;
+    }
+
+    &__picture {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    &__img {
+      object-fit: cover;
+      width: inherit;
+      height: 310px;
+    }
+  }
+
+  @media (max-width: map-get($screens, md)) {
+    &__text-content {
+      max-width: 458px;
+    }
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    gap: 100px;
+
+    &__text-content {
+      margin: 0 24px;
+    }
+
+    &__subtitle {
+      margin-bottom: 9px;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 2.3625px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    &__img {
+      object-fit: cover;
+      width: inherit;
+      height: 170px;
+    }
+  }
+}

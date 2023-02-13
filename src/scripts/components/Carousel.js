@@ -15,6 +15,7 @@ export default class Carousel {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        bulletElement: 'li',
         clickable: true,
       },
       initialSlide: 0,
