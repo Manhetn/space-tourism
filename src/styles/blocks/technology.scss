@@ -6,7 +6,6 @@
 
   &__title {
     margin-bottom: 26px;
-    // margin: 0 0 26px;
   }
 
   &__carousel {
@@ -14,49 +13,40 @@
 
   @media (max-width: map-get($screens, xl)) {
     &__container {
-      // padding-top: 76px;
       padding-left: 55px;
-      // padding: 76px 0 0 ;
     }
   }
 
   @media (max-width: map-get($screens, lg)) {
     &__container {
-      // padding: 76px 0 0;
       padding-left: 0;
     }
 
     &__title {
       margin-bottom: 60px;
       margin-left: 55px;
-      // margin: 0 0 60px 55px;
     }
   }
 
   @media (max-width: map-get($screens, md)) {
     &__container {
       padding-top: 40px;
-      // padding: 40px 0 0 0;
     }
 
     &__title {
-      // margin-bottom: 60px;
       margin-left: 38.5px;
-      // margin: 0 0 60px 38.5px;
     }
   }
 
   @media (max-width: map-get($screens, sm)) {
     &__container {
       padding-top: 24px;
-      // padding: 24px 0 0 0;
       text-align: center;
     }
 
     &__title {
       margin-bottom: 32px;
       margin-left: 0;
-      // margin: 0 0 32px 0;
     }
   }
 }
