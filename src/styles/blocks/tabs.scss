@@ -4,23 +4,19 @@
 
   &__list {
     align-self: flex-end;
-    max-width: 476.5px;
+    max-width: 445px;
     width: 100%;
     display: flex;
     align-items: stretch;
     gap: 36px;
   }
 
-  &__list-item {
-  }
-
   &__list-tab {
     display: block;
     padding-bottom: 12px;
     border-bottom: 3px solid transparent;
-    color: rgba($color: $colo-white, $alpha: 0.5);
+    color: inherit;
     font-family: 'Barlow Condensed';
-    font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 2.7px;
@@ -40,21 +36,11 @@
     }
   }
 
-  &__list-content {
-  }
-
   &__content-item {
     display: none;
 
     &--active {
       display: block;
-    }
-  }
-
-  @media (max-width: map-get($screens, xl)) {
-    &__list {
-      // max-width: 445px;
-      margin-right: 0;
     }
   }
 
@@ -67,15 +53,8 @@
       justify-content: center;
       position: absolute;
       width: 100%;
-      top: 487.5px;
-      z-index: 1;
-    }
-  }
-
-  @media (max-width: map-get($screens, md)) {
-    &__list {
-      width: 100%;
       top: 353px;
+      z-index: 1;
     }
   }
 
