@@ -1,3 +1,5 @@
+// @import '../variables.scss';
+
 .intro {
   padding-top: 251px;
 
@@ -13,19 +15,16 @@
   }
 
   &__subtitle {
+    @include heading-5;
+
     margin-bottom: $area-base-large;
-    font-size: $fs-heading-5;
-    line-height: $lh-heading-5;
-    letter-spacing: $ls-heading-5;
-    font-family: 'Barlow Condensed';
   }
 
   &__title {
+    @include heading-1;
+
     margin-bottom: $area-base-large;
     color: $colo-white;
-    font-size: $fs-heading-1;
-    line-height: $lh-heading-1;
-    font-family: 'Bellefair';
   }
 
   &__main-button {
@@ -61,16 +60,6 @@
 
   @media (max-width: map-get($screens,  md)) {
     padding-top: 106px;
-
-    &__subtitle {
-      font-size: $fs-heading-5-small;
-      line-height: $lh-heading-5-small;
-      letter-spacing: $ls-heading-5-small;
-    }
-
-    &__title {
-      line-height: $lh-heading-1-small;
-    }
   }
 
   @media (max-width: map-get($screens,  md)) {
@@ -81,18 +70,9 @@
       gap: 81px;
     }
 
-    &__subtitle {
-      margin-bottom: 16px;
-      
-      font-size: 16px;
-      line-height: 19px;
-      letter-spacing: 2.7px;
-    }
-
+    &__subtitle,
     &__title {
       margin-bottom: 16px;
-      font-size: 80px;
-      line-height: 100px;
     }
   }
 }

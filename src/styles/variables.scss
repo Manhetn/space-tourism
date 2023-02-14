@@ -9,8 +9,6 @@ $screens: (
   xxl: 1440px,
 );
 
-// $max-width: 1110px;
-
 // $area-bullet: 4px;
 // $area-half: 8px;
 $area-base-small: 12px;
@@ -29,74 +27,211 @@ $colo-blue-dark: #383b4b;
 $colo-blue: #d0d6f9;
 
 // /* border */
-// $radius-base: 4px;
 $radius-circle: 50%;
+
 // /* typography */
-// 20px × 23 + 2
-// 24px × 1 + 23
-
-$fs-base-small: 15px;
-$lh-base-small: 25px;
-
-// line-height: 19px;
-
-$fs-least: 14px;
-
-$fs-base: 16px;
-$lh-base: 28px;
-
-$fs-base-big: 18px;
-$lh-base-big: 32px;
-
-$fs-a: 14px;
-$ls-a: 17px;
-
-$fs-h3: 80px;
-$lh-h3: 92px;
-
-$fs-h5: 40px;
-$lh-h5: 46px;
-// ---------- --------- ---- - ------
 
 $fs-heading-1: 150px;
-$ff-heading-1: 'Bellefair';
 $lh-heading-1: 172px;
-$lh-heading-1-small: 150px;
+$lh-heading-1-t: 150px;
+$fs-heading-1-m: 80px;
+$lh-heading-1-m: 100px;
+
+@mixin heading-1 {
+  font-size: $fs-heading-1;
+  line-height: $lh-heading-1;
+  font-family: $ff-Bellefair;
+  font-weight: $fw-regular;
+
+  @media (max-width: map-get($screens, md)) {
+    line-height: $lh-heading-1-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-heading-1-m;
+    line-height: $lh-heading-1-m;
+  }
+}
 
 $fs-heading-2: 100px;
 $lh-heading-2: 115px;
+$fs-heading-2-t: 80px;
+$lh-heading-2-t: 92px;
+$fs-heading-2-m: 56px;
+$lh-heading-2-m: 64px;
+
+@mixin heading-2 {
+  font-size: $fs-heading-2;
+  line-height: $lh-heading-2;
+  font-family: $ff-Bellefair;
+  font-weight: $fw-regular;
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-heading-2-t;
+    line-height: $lh-heading-2-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-heading-2-m;
+    line-height: $lh-heading-2-m;
+  }
+}
 
 $fs-heading-3: 56px;
-$lh-heading-3: 92px;
+$lh-heading-3: 64px;
+$fs-heading-3-t: 40px;
+$lh-heading-3-t: 46px;
+$fs-heading-3-m: 24px;
+$lh-heading-3-m: 28px;
+
+@mixin heading-3 {
+  font-size: $fs-heading-3;
+  line-height: $lh-heading-3;
+  font-family: $ff-Bellefair;
+  font-weight: $fw-regular;
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-heading-3-t;
+    line-height: $lh-heading-3-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-heading-3-m;
+    line-height: $lh-heading-3-m;
+  }
+}
 
 $fs-heading-4: 32px;
 $lh-heading-4: 37px;
+$fs-heading-4-t: 24px;
+$lh-heading-4-t: 28px;
+$fs-heading-4-m: 16px;
+$lh-heading-4-m: 18px;
+
+@mixin heading-4 {
+  font-size: $fs-heading-4;
+  line-height: $lh-heading-4;
+  font-family: $ff-Bellefair;
+  font-weight: $fw-regular;
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-heading-4-t;
+    line-height: $lh-heading-4-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-heading-4-m;
+    line-height: $lh-heading-4-m;
+  }
+}
 
 $fs-heading-5: 28px;
-$ff-heading-5: 'Barlow Condensed Regular';
 $lh-heading-5: 34px;
 $ls-heading-5: 4.725px;
+$fs-heading-5-t: 20px;
+$lh-heading-5-t: 24px;
+$ls-heading-5-t: 3.375px;
+$fs-heading-5-m: 16px;
+$lh-heading-5-m: 19px;
+$ls-heading-5-m: 2.7px;
 
-$fs-heading-5-small: 20px;
-$lh-heading-5-small: 24px;
-$ls-heading-5-small: 3.375px;
-// ---- ----
+@mixin heading-5 {
+  font-size: $fs-heading-5;
+  line-height: $lh-heading-5;
+  letter-spacing: $ls-heading-5;
+  font-family: $ff-Barlow-Condensed;
+  font-weight: $fw-regular;
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-heading-5-t;
+    line-height: $lh-heading-5-t;
+    letter-spacing: $ls-heading-5-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-heading-5-m;
+    line-height: $lh-heading-5-m;
+    letter-spacing: $ls-heading-5-m;
+  }
+}
+
 $fs-subheading-1: 28px;
-$ff-subheading-1: 'Barlow Condensed Regular';
+$lh-subheading-1: 32px;
+
+@mixin subheading-1 {
+  font-size: $fs-subheading-1;
+  line-height: $lh-subheading-1;
+  font-family: $ff-Bellefair;
+}
 
 $fs-subheading-2: 14px;
-$ls-subheading-2: 2.35px;
+$lh-subheading-2: 17px;
+$ls-subheading-2: 2.3625px;
 
-$fs-nav: 16px;
-$ls-heading-5: 2.75px;
+@mixin subheading-2 {
+  font-size: $fs-subheading-2;
+  line-height: $lh-subheading-2;
+  letter-spacing: $ls-subheading-2;
+  font-family: $ff-Barlow-Condensed;
+}
+
+$fs-nav-link: 16px;
+$lh-nav-link: 19px;
+$ls-nav-link: 2.7px;
+$fs-nav-link-t: 14px;
+$lh-nav-link-t: 17px;
+$ls-nav-link-t: 2.3625px;
+$fs-nav-link-m: 16px;
+$lh-nav-link-m: 19px;
+$ls-nav-link-m: 2.7px;
+
+@mixin nav-link {
+  font-size: $fs-nav-link;
+  line-height: $lh-nav-link;
+  letter-spacing: $ls-nav-link;
+  font-family: $ff-Barlow-Condensed;
+  font-weight: $fw-regular;
+
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-nav-link-t;
+    line-height: $lh-nav-link-t;
+    letter-spacing: $ls-nav-link-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-nav-link-m;
+    line-height: $lh-nav-link-m;
+    letter-spacing: $ls-nav-link-m;
+  }
+}
 
 $fs-base: 18px;
 $lh-base: 32px;
+$fs-base-t: 16px;
+$lh-base-t: 28px;
+$fs-base-m: 15px;
+$lh-base-m: 25px;
 
-// font-family: 'Barlow';
+@mixin base-text {
+  font-size: $fs-base;
+  line-height: $lh-base;
+  font-family: $ff-Barlow;
+  font-weight: $fw-regular;
 
-// $f-base: 'Be Vietnam Pro';
-// $ff-primary: $f-base, 'sans-serif';
+  @media (max-width: map-get($screens, md)) {
+    font-size: $fs-base-t;
+    line-height: $lh-base-t;
+  }
+
+  @media (max-width: map-get($screens, sm)) {
+    font-size: $fs-base-m;
+    line-height: $lh-base-m;
+  }
+}
+
+$ff-Barlow: 'Barlow', 'Be Vietnam Pro', sans-serif;
+$ff-Bellefair: 'Bellefair', 'Be Vietnam Pro', sans-serif;
+$ff-Barlow-Condensed: 'Barlow Condensed', 'Be Vietnam Pro', sans-serif;
 
 $fw-regular: 400;
 $fw-bold: 700;

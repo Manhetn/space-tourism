@@ -1,18 +1,6 @@
 .body {
+  @include base-text;
+
   overflow: hidden;
-  font-family: 'Barlow';
-  font-size: $fs-base;
-  line-height: $lh-base;
-  font-weight: $fw-regular;
   color: $colo-blue;
-
-  @media (max-width: map-get($screens, md)) {
-    font-size: 16px;
-    line-height: 28px;
-  }
-
-  @media (max-width: map-get($screens, sm)) {
-    font-size: 15px;
-    line-height: 25px;
-  }
 }

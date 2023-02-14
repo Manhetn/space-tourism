@@ -17,12 +17,15 @@
   }
 
   &__link {
+    @include nav-link;
+    
     display: flex;
     gap: $area-base-small;
     text-decoration: none;
     color: $colo-white;
     border-bottom: 3px solid transparent;
     padding-bottom: $area-double + 3;
+    
 
     &::before {
       content: '0' counter(count);
@@ -57,11 +60,6 @@
 
     .icon--close {
       display: none;
-    }
-  }
-
-  @media (max-width: map-get($screens, xl)) {
-    &__list {
     }
   }
 
@@ -103,7 +101,6 @@
         right: 0;
         bottom: 0;
         z-index: 20;
-        // width: 71%;
       }
 
       .navigation__toggle-button {
@@ -140,8 +137,5 @@
     &__toggle-button {
       display: flex;
     }
-  }
-
-  @media (max-width: map-get($screens, sm)) {
   }
 }

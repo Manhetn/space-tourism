@@ -16,13 +16,13 @@
     padding-bottom: 12px;
     border-bottom: 3px solid transparent;
     color: inherit;
-    font-family: 'Barlow Condensed';
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
     text-transform: uppercase;
     text-decoration: none;
     transition: border-bottom-color 0.3 ease;
+    font-family: $ff-Barlow-Condensed;
+    font-size: $fs-nav-link;
+    line-height: $lh-nav-link;
+    letter-spacing: $ls-nav-link;
 
     &[aria-pressed='true'],
     &[aria-pressed='true']:hover {
@@ -65,9 +65,9 @@
     }
 
     &__list-tab {
-      font-size: 14px;
-      line-height: 17px;
-      letter-spacing: 2.3625px;
+      font-size: $fs-nav-link-t;
+      line-height: $lh-nav-link-t;
+      letter-spacing: $ls-nav-link-t;
     }
   }
 }
