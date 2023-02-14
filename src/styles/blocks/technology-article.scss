@@ -10,21 +10,15 @@
 
   &__subtitle {
     margin-bottom: 11px;
-
-    // /* typography */
-    font-family: 'Barlow Condensed';
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2.7px;
+    font-family: $ff-Barlow-Condensed;
+    font-size: $fs-nav-link;
+    line-height: $lh-nav-link;
+    letter-spacing: $ls-nav-link;
   }
 
   &__title {
+    @include heading-3;
     margin-bottom: 17px;
-
-    // /* typography */
-    font-family: 'Bellefair';
-    font-size: 56px;
-    line-height: 64px;
     color: $colo-white;
   }
 
@@ -64,8 +58,6 @@
 
     &__title {
       margin-bottom: 16px;
-      font-size: 40px;
-      line-height: 46px;
     }
 
     &__text {
@@ -99,19 +91,13 @@
 
     &__subtitle {
       margin-bottom: 9px;
-
-      // /* typography */
-      font-size: 14px;
-      line-height: 17px;
-      letter-spacing: 2.3625px;
+      font-size: $fs-nav-link-t;
+      line-height: $lh-nav-link-t;
+      letter-spacing: $ls-nav-link-t;
     }
 
     &__title {
       margin-bottom: 16px;
-
-      // /* typography */
-      font-size: 24px;
-      line-height: 28px;
     }
 
     &__img {

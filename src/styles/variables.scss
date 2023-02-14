@@ -181,9 +181,6 @@ $ls-nav-link: 2.7px;
 $fs-nav-link-t: 14px;
 $lh-nav-link-t: 17px;
 $ls-nav-link-t: 2.3625px;
-$fs-nav-link-m: 16px;
-$lh-nav-link-m: 19px;
-$ls-nav-link-m: 2.7px;
 
 @mixin nav-link {
   font-size: $fs-nav-link;
@@ -192,17 +189,23 @@ $ls-nav-link-m: 2.7px;
   font-family: $ff-Barlow-Condensed;
   font-weight: $fw-regular;
 
-  @media (max-width: map-get($screens, md)) {
+  @media (min-width: map-get($screens, mds)) and (max-width: map-get($screens, md)) {
     font-size: $fs-nav-link-t;
     line-height: $lh-nav-link-t;
     letter-spacing: $ls-nav-link-t;
   }
 
-  @media (max-width: map-get($screens, sm)) {
-    font-size: $fs-nav-link-m;
-    line-height: $lh-nav-link-m;
-    letter-spacing: $ls-nav-link-m;
-  }
+  // @media (max-width: map-get($screens, md)) {
+  //   font-size: $fs-nav-link-t;
+  //   line-height: $lh-nav-link-t;
+  //   letter-spacing: $ls-nav-link-t;
+  // }
+
+  // @media (max-width: map-get($screens, sm)) {
+  //   font-size: $fs-nav-link;
+  //   line-height: $lh-nav-link;
+  //   letter-spacing: $ls-nav-link;
+  // }
 }
 
 $fs-base: 18px;
