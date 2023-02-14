@@ -77,6 +77,7 @@
 
     &__link {
       min-height: 19px;
+
       &::before {
         display: none;
       }
@@ -100,6 +101,11 @@
         right: 0;
         bottom: 0;
         z-index: 20;
+      }
+
+      .navigation__link {
+        border-bottom: none;
+        padding-bottom: 0;
       }
 
       .navigation__toggle-button {
