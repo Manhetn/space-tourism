@@ -29,12 +29,12 @@
   &__info-title {
     @include subheading-2;
 
-    margin-bottom: 12px;
+    margin-bottom: $area-base-small;
   }
 
   &__info-text {
     @include subheading-1;
-    
+
     color: $colo-white;
   }
 
@@ -71,7 +71,7 @@
     }
 
     &__title {
-      margin-bottom: 8px;
+      margin-bottom: $area-half;
     }
 
     &__text {
@@ -101,13 +101,13 @@
     }
 
     &__text {
-      margin-bottom: 32px;
+      margin-bottom: $area-double;
     }
 
     &__addition {
       flex-direction: column;
-      gap: 32px;
-      padding-top: 32px;
+      gap: $area-double;
+      padding-top: $area-double;
     }
   }
 }

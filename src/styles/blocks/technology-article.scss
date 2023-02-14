@@ -5,7 +5,7 @@
 
   &__text-content {
     align-self: center;
-    margin-right: 24px;
+    margin-right: $area-base-large;
   }
 
   &__subtitle {
@@ -36,7 +36,7 @@
   }
 
   @media (max-width: map-get($screens, xl)) {
-    padding-left: 120px;
+    padding-left: $area-largest;
   }
 
   @media (max-width: map-get($screens, lg)) {
@@ -52,12 +52,9 @@
       margin: 0;
     }
 
-    &__subtitle {
-      margin-bottom: 16px;
-    }
-
+    &__subtitle,
     &__title {
-      margin-bottom: 16px;
+      margin-bottom:$area-base;
     }
 
     &__text {
@@ -86,7 +83,7 @@
     gap: 100px;
 
     &__text-content {
-      margin: 0 24px;
+      margin: 0 $area-base-large;
     }
 
     &__subtitle {
@@ -97,7 +94,7 @@
     }
 
     &__title {
-      margin-bottom: 16px;
+      margin-bottom: $area-base;
     }
 
     &__img {

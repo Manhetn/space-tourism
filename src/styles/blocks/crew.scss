@@ -14,23 +14,28 @@
 
   @media (max-width: map-get($screens, xl)) {
     &__container {
-      padding: 40px 39px 0;
+      padding: 76px 55px 0;
     }
-
     &__title {
       position: static;
       margin-bottom: 60px;
     }
   }
 
+  @media (max-width: map-get($screens, md)) {
+    &__container {
+      padding: 40px 39px 0;
+    }
+  }
+
   @media (max-width: map-get($screens, sm)) {
     &__container {
-       padding: 24px;
+      padding: $area-base-large;
     }
 
     &__title {
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: $area-double;
     }
   }
 }

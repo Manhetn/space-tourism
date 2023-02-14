@@ -8,9 +8,6 @@
     margin-bottom: 26px;
   }
 
-  &__carousel {
-  }
-
   @media (max-width: map-get($screens, xl)) {
     &__container {
       padding-left: 55px;
@@ -40,12 +37,12 @@
 
   @media (max-width: map-get($screens, sm)) {
     &__container {
-      padding-top: 24px;
+      padding-top: $area-base-large;
       text-align: center;
     }
 
     &__title {
-      margin-bottom: 32px;
+      margin-bottom: $area-double;
       margin-left: 0;
     }
   }

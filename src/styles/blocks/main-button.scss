@@ -8,16 +8,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  // /* typography */
   font-size: $fs-heading-4;
   line-height: $lh-heading-4;
-  font-family: 'Bellefair';
+  font-family: $ff-Bellefair;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0px 0px 0px 88px rgba(225, 225, 225, 0.1);
+    box-shadow: 0px 0px 0px 88px rgba($color: $colo-white, $alpha: 0.1);
   }
 
   @media (max-width: map-get($screens,  md)) {
@@ -25,21 +23,19 @@
     height: 242px;
 
     &:hover {
-      box-shadow: 0px 0px 0px 78px rgba(225, 225, 225, 0.1);
+      box-shadow: 0px 0px 0px 78px rgba($color: $colo-white, $alpha: 0.1);
     }
   }
 
   @media (max-width: map-get($screens,  sm)) {
     width: 150px;
     height: 150px;
-
-    // /* typography */
-    font-size: 20px;
-    line-height: 23px;
+    font-size: $fs-heading-5-t;
+    line-height: $lh-heading-5-t - 1;
     letter-spacing: 1.25px;
 
     &:hover {
-      box-shadow: 0px 0px 0px 48.5px rgba(225, 225, 225, 0.1);
+      box-shadow: 0px 0px 0px 48.5px rgba($color: $colo-white, $alpha: 0.1);
     }
   }
 }

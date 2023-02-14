@@ -3,7 +3,7 @@
   align-items: center;
 
   &__list {
-    counter-reset: count -1;
+    counter-reset: count - 1;
     display: flex;
     gap: $area-treble;
     background: rgba($color: $colo-white, $alpha: 0.04);
@@ -18,14 +18,13 @@
 
   &__link {
     @include nav-link;
-    
+
     display: flex;
     gap: $area-base-small;
     text-decoration: none;
     color: $colo-white;
     border-bottom: 3px solid transparent;
     padding-bottom: $area-double + 3;
-    
 
     &::before {
       content: '0' counter(count);
@@ -49,8 +48,8 @@
     border: none;
     background: none;
     width: fit-content;
-    width: 48px;
-    height: 48px;
+    width: $area-treble;
+    height: $area-treble;
     justify-content: center;
     align-items: center;
 
@@ -65,15 +64,15 @@
 
   @media (max-width: map-get($screens, lg)) {
     &__list {
-      padding: 0 48px;
+      padding: 0 $area-treble;
       gap: 37px;
     }
   }
 
   @media (max-width: map-get($screens, md)) {
     &__list {
-      padding: 0 clamp(39px, 6.25vw, 48px);
-      gap: clamp(24px, 5.2vw, 37px);
+      padding: 0 clamp(39px, 6.25vw, $area-treble);
+      gap: clamp($area-base-large, 5.2vw, 37px);
     }
 
     &__link {
@@ -92,8 +91,8 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 118px 32px;
-        gap: 32px;
+        padding: 118px $area-double;
+        gap: $area-double;
         width: 254px;
 
         position: absolute;

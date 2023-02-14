@@ -12,7 +12,7 @@
 
   @media (max-width: map-get($screens, md)) {
     &__count {
-      margin-right: 16px;
+      margin-right: $area-base;
     }
   }
 }

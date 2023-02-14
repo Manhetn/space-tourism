@@ -1,6 +1,6 @@
 .crew-article {
   display: flex;
-  gap: 80px;
+  gap: $area-large;
 
   &__text-content {
     padding-top: 188px;
@@ -66,11 +66,11 @@
     }
 
     &__subtitle {
-      margin-bottom: 8px;
+      margin-bottom: $area-half;
     }
 
     &__title {
-      margin-bottom: 16px;
+      margin-bottom: $area-base;
     }
 
     &__text {
